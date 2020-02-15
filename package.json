@@ -1,0 +1,28 @@
+{
+  "name": "create-nodejs-reactjs-mongodb-template",
+  "version": "1.0.0",
+  "description": "NodeJs/ReactJs/MongoDB template deployed with heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "cd frontend && npm run start",
+    "server": "nodemon server.js",
+    "heroku-postbuild": "cd frontend && npm install && npm run build && cd .."
+  },
+  "author": "victorlpgazolli",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "md5": "^2.2.1",
+    "mongoose": "^5.9.0",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7"
+  }
+}
